@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <title>Pagina principal</title>
+  </head>
+  <body>
+    <div id="container">
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/"><button>Home</button></a>
+        <a href="/visao_livros"><button>Todos os livros</button></a>
+        <a href="/visao_emprestimos"><button >Mostrar emprestimos</button></a>
+        <a href="/visao_usuarios"><button >Mostrar usuarios</button></a>
+      </nav>
+    </header>
+
+
+            
+</div>
+  </body>
+</html>

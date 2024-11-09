@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <title>Pagina principal</title>
+  </head>
+  <body>
+    <div id="container">
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <button>Home</button>
+        <a href="/relatorios"><button>Relatorios</button></a>
+        <a href="/insert_book"><button >Cadastrar livro</button></a>
+        <a href="/register_page"><button >Cadastrar Usuario</button></a>
+        <a href="/loan"><button >Realizar emprestimo</button></a>
+        <a href="/return_book"><button >Devolver livro</button></a>
+      </nav>
+    </header>
+
+    <section id="main_images">
+        <img src="static/images/mpImg1.jpg">
+        <p>Este projeto tem como objetivo principal a criação de um sistema de biblioteca virtual, desenvolvido como 
+          parte do Projeto Integrado do primeiro semestre do curso de Ciência de Dados. Através da implementação deste sistema, buscamos aplicar os conhecimentos 
+          adquiridos em banco de dados, modelando e gerenciando informações de forma eficiente. Além disso, o projeto visa explorar conceitos de desenvolvimento de software </p>
+    </section>
+
+
+    <section id="book_recommendation">
+      <main id="text_recommendation">
+          <article>
+              <h2 id="recommendation_title">Recomendação do dia</h2>
+              <figure>
+                  <img id="recommendation_image" alt="Capa do Livro">
+              </figure>
+          </article>
+      </main>
+  </section>
+  
+
+    
+    <span id="change_images"></span>
+
+    <footer id="main_footer">
+      <p style="color: white;">Desenvolvido por João Lucas dos Santos Medeiros. Projeto do primeiro semestre do curso de Ciência de Dados.</p>
+    </footer>
+            
+</div>
+  </body>
+</html>

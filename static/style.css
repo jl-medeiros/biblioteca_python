@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Index.html*/
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(47, 46, 70);
+}
+
+div#container{
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+}
+
+header{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    background-color: rgb(255, 201, 135);
+}
+
+header h1{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 5vh;
+    font-style: normal;
+}
+
+header button{
+    border-radius: 1vw;
+    margin-right: 0.5vw;
+    border-color: transparent;
+    padding: 0.7vh 0.5vw;
+}
+
+header button:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background-color: rgb(198, 198, 255);
+}
+
+h2{
+    font-weight: 100;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav#main_buttons{
+    display: flex;
+}
+
+nav#main_buttons p{
+    margin-right: 1.5vw;
+}
+
+nav#main_buttons p:hover{
+    cursor: pointer;
+    color: cadetblue;
+    transition: 1.5s;
+}
+
+section#main_images {
+    display: flex;
+    margin: 10vh 20vw 10vh 20vw;
+    height: 40vh;
+    width: 60vw;
+    background-color: rgb(255, 199, 159);
+}
+
+section#main_images img{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+section#main_images p{
+    text-align: justify;
+    text-indent: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 8vh;
+
+    font-size: 1vw;
+}
+
+section#book_recommendation{
+    background-color: rgb(124, 124, 124);
+    width: fit-content;
+    margin: 10vh 20vw 5vh 3vw;
+}
+
+
+section#book_recommendation h2{
+    text-align: center;
+    font-size: 1vw;
+    text-wrap: wrap;
+}
+
+section#book_recommendation main figure{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+section#book_recommendation main article{
+    padding-bottom: 0.5vh;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    align-self: center;
+}
+
+/*Log-in screen*/
+
+
+
+.center_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.register {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    padding-bottom: 1vh;
+    background-color: antiquewhite;
+    top: 50%; /* Posiciona o topo do elemento no meio da tela */
+    left: 50%; /* Posiciona o lado esquerdo do elemento no meio da tela */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para realmente centralizar */
+}
+
+.register h2{
+    text-align: center;
+}
+
+
+
+/*Tabela livros*/
+
+table#all_loans,
+table#all_users,
+table#all_books{
+    width: 100%;
+}
+
+table#all_users thead,
+table#all_loans thead,
+table#all_books thead{
+    background-color: rgb(180, 180, 180);
+}
+
+table#all_loans tbody,
+table#all_users tbody,
+table#all_books tbody{
+    background-color: white;
+}
+table#all_loans tbody td,
+table#all_users tbody td,
+table#all_books tbody td{
+    text-align: center;
+}
+
+
+
+/*book return*/
+
+#loan-section {
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+#loans_panel {
+    max-width: 100%;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.devolution form{
+    text-align: left;
+    justify-content: left;
+}
+
+.devolution form input{
+    width: auto;
+    margin-bottom: 3vh;
+}
+
+form input{
+    width: 100%;
+}
+
+
+/*JAVASCRIPT CLASSES*/
+
+
+.not-avalible{
+    color: red;
+}

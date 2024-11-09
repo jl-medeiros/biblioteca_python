@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='data_users.js')}}"></script>
+    <title>Todos os usuarios</title>
+</head>
+<body>
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/relatorios"><button>Voltar</button></a>
+      </nav>
+    </header>
+
+    <section id="content">
+        <table id="all_users">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+</body>
+</html>

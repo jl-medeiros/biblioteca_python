@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
+    <script src="{{url_for('static', filename='get_loans_data.js')}}"></script>
+    <title>Devolver livro</title>
+</head>
+<body>
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/"><button>Home</button></a>
+        <a href="/visao_livros"><button>Todos os livros</button></a>
+        <a href="/insert_book"><button >Cadastrar livro</button></a>
+        <a href="/register_page"><button >Cadastrar Usuario</button></a>
+        <a href="/loan"><button >Realizar emprestimo</button></a>
+        <a href="/return_book"><button >Devolver livro</button></a>
+      </nav>
+    </header>
+    <div id="loan-container" class="center_container">
+        <section id="loan-section" class="register devolution">
+            <h2>Realizar devolução</h2>
+            <form onsubmit="return_book(event)">
+                <div id="loans_panel"></div>
+            </form>
+        
+    </div>
+</body>
+</html>

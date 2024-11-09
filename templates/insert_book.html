@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
+    <title>Cadastrar livro</title>
+</head>
+<body>
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/"><button>Home</button></a>
+        <a href="/visao_livros"><button>Todos os livros</button></a>
+        <a href="/insert_book"><button >Cadastrar livro</button></a>
+        <a href="/register_page"><button >Cadastrar Usuario</button></a>
+        <a href="/loan"><button >Realizar emprestimo</button></a>
+        <a href="/return_book"><button >Devolver livro</button></a>
+      </nav>
+    </header>
+    <div id="register-container">
+        <section id="register-book" class="register">
+            <h2>Cadastrar Livro</h2>
+            <form onsubmit="book(event)">
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" id="isbn" required>
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" id="titulo" required>
+                <label for="autor">Autor</label>
+                <input type="text" name="autor" id="autor" required>
+                <label for="ano_pub">Ano Publicação</label>
+                <input type="text" name="ano_pub" id="ano_pub" required>
+                <label for="copias_disp">Copias_disponiveis</label>
+                <input type="text" name="copias_disp" id="copias_disp" required>
+                <button type="submit">Registrar</button>
+            </form>
+        
+    </div>
+</body>
+</html>

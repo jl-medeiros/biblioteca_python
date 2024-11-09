@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
+    <script src="{{url_for('static', filename='load_users_and_books.js')}}"></script>
+    <title>Realizar emprestimo</title>
+</head>
+<body>
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/"><button>Home</button></a>
+        <a href="/visao_livros"><button>Todos os livros</button></a>
+        <a href="/insert_book"><button >Cadastrar livro</button></a>
+        <a href="/register_page"><button >Cadastrar Usuario</button></a>
+        <a href="/loan"><button >Realizar emprestimo</button></a>
+        <a href="/return_book"><button >Devolver livro</button></a>
+      </nav>
+    </header>
+    <div id="loan-container" class="center_container">
+        <section id="loan-section" class="register">
+            <h2>Realizar emprestimo</h2>
+            <form onsubmit="loan(event)">
+                <select name="books" id="books_select"></select>
+                  <select name="users" id="users_select"></select>
+                  <button type="submit">Realizar emprestimo</button>
+            </form>
+        
+    </div>
+</body>
+</html>

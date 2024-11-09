@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='data_loans.js')}}"></script>
+    <title>Todos os emprestimos</title>
+</head>
+<body>
+    <header id="header_mainpage">
+        <h1>BIBLIOTECA ANHANGUERA</h1>
+      <nav id="main_buttons">
+        <a href="/relatorios"><button>Voltar</button></a>
+      </nav>
+    </header>
+
+    <section id="content">
+        <table id="all_loans">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Livro</th>
+                    <th>Autor</th>
+                    <th>Data Emprestimo</th>
+                    <th>Data Devolução</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+</body>
+</html>
